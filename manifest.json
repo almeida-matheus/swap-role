@@ -26,15 +26,15 @@
     },
     "options_ui": {
         "open_in_tab": true,
-        "page": "config.html"
+        "page": "config/config.html"
     },
     "browser_action": {
-        "default_icon": "assets/icons/switch-role.png",
+        "default_icon": "assets/icon/switch-role.png",
         "default_title": "switch role - aws",
-        "default_popup": "popup.html"
+        "default_popup": "popup/popup.html"
     },
     "icons": {
-        "256": "assets/icons/switch-role.png"
+        "256": "assets/icon/switch-role.png"
     },
     "permissions": [
         "tabs",
