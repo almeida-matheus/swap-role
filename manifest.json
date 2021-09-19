@@ -1,11 +1,10 @@
 {
     "manifest_version": 2,
     "version": "0.0.1",
-    "default_locale": "pt-br",
     "author": "Matheus Almeida Costa",
-    "name": "switch role - aws",
-    "short_name": "switch role",
-    "description": "extension to switch aws role",
+    "name": "Swap Role - AWS",
+    "short_name": "Swap Role",
+    "description": "Extension to switch AWS role",
     "content_scripts": [
         {
             "matches": [
@@ -13,16 +12,15 @@
                 "https://github.com/almeida-matheus/switch-role/*"
             ],
             "js": [
+                "chrome.js",
                 "content.js"
             ],
             "run_at": "document_end"
         }
     ],
     "background": {
-        "scripts": [
-            "background.js"
-        ],
-        "persistent": true
+        "page": "background/background.html",
+        "persistent": false
     },
     "options_ui": {
         "open_in_tab": true,
@@ -30,7 +28,7 @@
     },
     "browser_action": {
         "default_icon": "assets/icon/switch-role.png",
-        "default_title": "switch role - aws",
+        "default_title": "Swap Role - AWS",
         "default_popup": "popup/popup.html"
     },
     "icons": {

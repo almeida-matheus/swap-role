@@ -1,1 +1,1 @@
-console.log('hello world')
+//scan button switch role
