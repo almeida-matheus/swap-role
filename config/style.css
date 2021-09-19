@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --dark-blue: #363f5f;
+    --green: #49AA26;
+    --light-green: #3dd705;
+    --red: #e92929;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,22 +17,100 @@ html {
 }
 
 body {
-    background: #f0f2f5;
-    font-family: 'Poppins', sans-serif;
     background-color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 a {
     text-decoration: none;
 }
 
-textarea {
-    /* outline: orange; */
-    resize: none;
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
 }
 
-.form-control:focus {
-    border: #ffae19 2px solid;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .title {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+main .title h1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+main textarea {
+    resize: none;
+    border: #3f3a30 1px solid;
     outline: 0 !important;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+    
+}
+
+#config-text{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+
+main textarea:focus {
+    border: #4CAF50 1px solid;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+main .btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.4s;
+
+    margin: 40px 0px;
+}
+
+main .btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #3e8e41;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-around;
+
+    border-top: 1px rgba(0, 0, 0, 0.19) solid;
+    padding: 12px;
+    opacity: 0.8;
+}
+
+footer .e,
+footer.icon {
+    display: inline-block;
 }

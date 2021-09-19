@@ -5,60 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>switch-role config</title>
+    <title>Swap Role - Config</title>
     <!-- CSS custom-->
     <link rel="stylesheet" href="style.css">
-    <!-- CSS bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!--favicon-->
-    <link rel="icon" href="../assets/icon/switch-role.png">
+    <link rel="icon" href="../assets/icon/swap-role.png">
 </head>
 
-<body class="vh-100 mh-100" style="height: 100vh;">
-    <div class="container vh-100" style="height: 100vh;">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <i class="fab fa-aws fa-3x mt-4 mb-2"></i>
-            <h1 class="text-center fw-bold mt-3">AWS SWITCH ROLE CONFIG</h1>
-
-            <div class="mb-3">
+<body>
+    <div class="container">
+        <main>
+            <div class="title">
+                <i class="fab fa-aws fa-3x"></i>
+                <h1>AWS SWAP ROLE CONFIG</h1>
+            </div>
+            <div>
                 <label for="config-text" class="form-label"></label>
-                <textarea class="form-control" id="config-text" rows="15" cols="100" placeholder="[Dev]
+                <textarea id="config-text" cols="80" rows="30" placeholder="[Dev]
 aws_account_id=873477637145
 role_name=IAM-ALL-BI-SQUAD-USERS
 region=us-east-1
 color=86868f"></textarea>
             </div>
 
-            <input class="btn btn-success btn-lg" type="submit" onclick="myFunction()" value="Salvar">
-        </div>
+            <input class="btn" type="submit" onclick="myFunction()" value="Salvar">
+        </main>
 
         <p id="demo"></p>
 
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="https://matheustech.com.br/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <img src="https://almeida-matheus.github.io/assets/logo_black.png" alt="" width="30" height="30">
-                </a>
-                <span class="text-muted">© 2021 Matheus Almeida Costa, Inc</span>
-            </div>
+        <footer>
+            <div class="container">
+                <div class="e">
+                    <a href="https://matheustech.com.br/">
+                        <img src="https://almeida-matheus.github.io/assets/logo_black.png" alt="" width="30"
+                            height="30">
+                    </a>
+                    <span>© 2021 Swap Role, Inc</span>
+                </div>
 
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="https://github.com/almeida-matheus/switch-role"><i
-                            class="fab fa-github-square fa-2x"></i></a></li>
-            </ul>
+                <a class="icon" href="https://github.com/almeida-matheus/switch-role">
+                    <i class="fab fa-github-square fa-2x"></i>
+                </a>
+
+            </div>
         </footer>
 
     </div>
 
-    <!-- js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
     <!-- <script src="script.js"></script> -->
-
 </body>
 
 </html>
