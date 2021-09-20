@@ -87,7 +87,6 @@ main .btn {
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition-duration: 0.4s;
-
     margin: 40px 0px;
 }
 
@@ -97,20 +96,31 @@ main .btn:hover {
 }
 
 footer {
+    position: absolute;
     width: 100%;
-    position: fixed;
-    bottom: 0;
     left: 0;
+    bottom: 0;
+}
 
+footer .container {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
+    align-items: center;
     border-top: 1px rgba(0, 0, 0, 0.19) solid;
     padding: 12px;
     opacity: 0.8;
 }
 
-footer .e,
-footer.icon {
-    display: inline-block;
+footer .text-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+footer .text-footer span {
+    margin-left: .5rem;
+}
+
+
+
