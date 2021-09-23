@@ -8,7 +8,7 @@
     <title>Swap Role - Config</title>
     <!-- CSS custom-->
     <link rel="stylesheet" href="style.css">
-    <!--favicon-->
+    <!-- favicon -->
     <link rel="icon" href="../assets/icon/swap-role.png">
 </head>
 
@@ -17,18 +17,24 @@
         <main>
             <div class="title">
                 <i class="fab fa-aws fa-3x"></i>
-                <h1>AWS SWAP ROLE CONFIG</h1>
+                <h1>SWAP ROLE CONFIG</h1>
             </div>
-            <div>
+            <div class="box-text">
                 <label for="config-text" class="form-label"></label>
-                <textarea id="config-text" cols="80" rows="30" placeholder="[Dev]
+                <textarea id="config-text" cols="80" rows="34" placeholder="[Dev]
 aws_account_id=873477637145
 role_name=IAM-ALL-BI-SQUAD-USERS
 region=us-east-1
 color=86868f"></textarea>
+                <button id="copy">
+                    <i class="far fa-clipboard fa-2x"></i>
+                </button>
+                <!-- <div id="copyToClipboard-a" class="clipboard icon">
+                    <i class="far fa-clipboard"></i>
+                </div> -->
             </div>
 
-            <input class="btn" type="submit" onclick="myFunction()" value="Salvar">
+            <input class="btn" type="submit" onclick="saveText()" value="Salvar">
         </main>
 
         <p id="demo"></p>
@@ -36,14 +42,11 @@ color=86868f"></textarea>
         <footer>
             <div class="container">
                 <div class="text-footer">
-                    <a class="icon" href="https://github.com/almeida-matheus/switch-role">
+                    <a href="https://github.com/almeida-matheus/switch-role">
                         <i class="fab fa-github-square fa-2x"></i>
                     </a>
                     <span>© 2021 Swap Role, Inc</span>
                 </div>
-
-                
-
             </div>
         </footer>
 
@@ -51,6 +54,7 @@ color=86868f"></textarea>
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+    <!-- js custom -->
     <script src="script.js"></script>
 </body>
 

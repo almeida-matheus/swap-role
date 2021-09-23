@@ -1,4 +1,4 @@
-function myFunction() {
+function saveText() {
     let data = [];
     let aux = []
     let formattedData = {
@@ -46,3 +46,9 @@ function myFunction() {
     });
     localStorage.setItem('@swap-role:data', JSON.stringify(aux));
 }
+
+document.getElementById('copy').addEventListener('click', function() {
+    var text = document.getElementById('config-text');
+    text.select();
+    document.execCommand('copy');
+})
