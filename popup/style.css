@@ -27,34 +27,37 @@ img {
 
 .search-box {
     width: 100%;
+    
     position: relative;
     display: flex;
 }
 
 .search-box .search-input {
+    height: 40px;
     width: 100%;
     padding: 10px;
-    border: 2px solid #111d5e;
-    border-radius: 10px 0 0 10px;
+    border: 2px solid #555;
+    /* border-radius: 10px 0 0 10px; */
     border-right: none;
+    border-left: none;
     outline: none;
-    font-size: 18px;
+    font-size: 15px;
     color: #000;
     background: none;
 }
 
 .search-box .search-button {
     text-align: center;
-    height: 51px;
+    height: 40px;
     width: 40px;
     outline: none;
     cursor: pointer;
     border: 2px solid #111d5e;
-    border-radius: 0 10px 10px 0;
-    border-left: none;
+    /* border-radius: 0 10px 10px 0; */
+    /* border-left: none; */
     background: none;
     font-size: 16px;
-    border-left: 2px solid #111d5e;
+    /* border-left: 2px solid #111d5e; */
 }
 
 .list {
@@ -62,7 +65,7 @@ img {
     padding: 0;
     margin: 0;
     background-color: #ececec;
-    
+    /* border-radius: 8px; */
 }
 
 .list a {
@@ -71,16 +74,41 @@ img {
     border-top: 1px 0px solid #555;
     border-bottom: 1px solid #555;
     font-size: 14px;
-    padding: 10px;
+    padding: 4px 30px;
     cursor: pointer;
-
+    position: relative;
     color: black;
 }
 
+.list a:hover {
+    background-color: rgb(212, 212, 212);
+}
+
 .list a .color {
-    border: solid 10px #44dd44;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* border: solid 1px #44dd44; */
     width: 10px;
-    height: 10px;
+    background-color: #44dd44;
+    height: 100%;
+}
+
+.ball {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    border-radius: 50%;
+    transform: translateY(40%);
+    background-color: #44dd4400;
+    border: 2px solid #44dd44;
+    transition: all .3s;
+}
+
+.list a:hover .ball {
+    background-color: #44dd44;
 }
 
 .list a b {
@@ -88,7 +116,16 @@ img {
 }
 
 .list .config {
-    text-align: center;
+    display: flex;
+    padding: 5px 0;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
     color: whitesmoke;
     background-color: whitesmoke;
+}
+
+.role {
+    font-size: 12px;
+    margin-left: 10px;
 }
