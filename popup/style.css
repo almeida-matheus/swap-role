@@ -74,7 +74,7 @@ img {
     border-top: 1px 0px solid #555;
     border-bottom: 1px solid #555;
     font-size: 14px;
-    padding: 4px 30px;
+    padding: 4px 40px;
     cursor: pointer;
     position: relative;
     color: black;
@@ -128,5 +128,8 @@ img {
     align-items: center;
     color: whitesmoke;
     background-color: whitesmoke;
+}
+.config:hover {
+    background-color: rgb(212, 212, 212);
 }
 
