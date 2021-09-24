@@ -60,7 +60,7 @@ img {
     /* border-left: 2px solid #111d5e; */
 }
 
-.list {
+#list {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -68,7 +68,7 @@ img {
     /* border-radius: 8px; */
 }
 
-.list a {
+#list a {
     display: block;
     text-decoration: none;
     border-top: 1px 0px solid #555;
@@ -80,11 +80,11 @@ img {
     color: black;
 }
 
-.list a:hover {
+#list a:hover {
     background-color: rgb(212, 212, 212);
 }
 
-.list a .color {
+#list a .color {
     position: absolute;
     left: 0;
     top: 0;
@@ -94,7 +94,7 @@ img {
     height: 100%;
 }
 
-.ball {
+#list a .ball {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -107,15 +107,20 @@ img {
     transition: all .3s;
 }
 
-.list a:hover .ball {
+#list a:hover .ball {
     background-color: #44dd44;
 }
 
-.list a b {
+#list a b {
     font-size: 16px;
 }
 
-.list .config {
+#list a .id {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.config {
     display: flex;
     padding: 5px 0;
     height: 40px;
@@ -125,7 +130,3 @@ img {
     background-color: whitesmoke;
 }
 
-.role {
-    font-size: 12px;
-    margin-left: 10px;
-}
