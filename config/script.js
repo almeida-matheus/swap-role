@@ -9,7 +9,7 @@ function saveText() {
         color: ''
     }
     let x = document.getElementById("config-text").value;
-    // document.getElementById("demo").innerHTML = x;
+
     let y = x.replaceAll('=', ':').replaceAll(']', '').split('[').filter(ln => ln !== '')
     
     y.map((ln, i) => {
@@ -45,7 +45,10 @@ function saveText() {
         aux[i] = {...formattedData};
     });
     localStorage.setItem('@swap-role:data', JSON.stringify(aux));
+    // LocalStorageSet(aux)
 }
+
+document.getElementById('save').addEventListener('click', saveText);
 
 document.getElementById('copy').addEventListener('click', function() {
     var text = document.getElementById('config-text');

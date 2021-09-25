@@ -1,4 +1,3 @@
-//api do chrome
 function ExtensionInstalled() {
     chrome.runtime.onInstalled.addListener(function (object) {
         chrome.tabs.create({
@@ -9,11 +8,8 @@ function ExtensionInstalled() {
 
 function LocalStorageGet(key) {
     chrome.storage.sync.get([key], function(items) {
-        message('Settings retrieved\n', items);
+        console.log('Settings retrieved\n', items);
     });
-    // chrome.storage.local.get([key], function(items) {
-    //     message('Settings retrieved\n', items);
-    // });
 }
 
 function LocalStorageSet(object) {

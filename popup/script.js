@@ -8,7 +8,7 @@ function addElement(data) {
     let role = data.role;
 
     const a = document.createElement('a');
-    a.setAttribute('href', `https://signin.aws.amazon.com/switchrole?account=${id}&roleName=${role}&displayName=${account}&color=${color}`);
+    a.setAttribute('href', `https://signin.aws.amazon.com/switchrole?account=${id}&roleName=${role}&displayName=${account}&color=${color}&region=${region}}`);
 
     a.innerHTML = `
         <div class="ball"></div>

@@ -13,7 +13,8 @@
             ],
             "js": [
                 "chrome.js",
-                "content.js"
+                "content.js",
+                "popup/script.js"
             ],
             "run_at": "document_end"
         }
