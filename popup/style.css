@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html {
     scroll-behavior: smooth;
     font-size: 10px;
@@ -14,10 +15,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
     width: 400px;
-}
-
-img {
-    font-size: 10px;
 }
 
 .container {
@@ -37,7 +34,6 @@ img {
     width: 100%;
     padding: 10px;
     border: 2px solid #555;
-    /* border-radius: 10px 0 0 10px; */
     border-right: none;
     border-left: none;
     outline: none;
@@ -46,26 +42,11 @@ img {
     background: none;
 }
 
-.search-box .search-button {
-    text-align: center;
-    height: 40px;
-    width: 40px;
-    outline: none;
-    cursor: pointer;
-    border: 2px solid #111d5e;
-    /* border-radius: 0 10px 10px 0; */
-    /* border-left: none; */
-    background: none;
-    font-size: 16px;
-    /* border-left: 2px solid #111d5e; */
-}
-
 #list {
     width: 100%;
     padding: 0;
     margin: 0;
-    background-color: #ececec;
-    /* border-radius: 8px; */
+    background-color: #efefef;
 }
 
 #list a {
@@ -73,22 +54,20 @@ img {
     text-decoration: none;
     border-top: 1px 0px solid #555;
     border-bottom: 1px solid #555;
-    font-size: 14px;
-    padding: 4px 40px;
+    padding: 6px 40px;
     cursor: pointer;
     position: relative;
     color: black;
 }
 
 #list a:hover {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(230, 230, 230);
 }
 
 #list a .color {
     position: absolute;
     left: 0;
     top: 0;
-    /* border: solid 1px #44dd44; */
     width: 10px;
     background-color: #44dd44;
     height: 100%;
@@ -112,7 +91,8 @@ img {
 }
 
 #list a b {
-    font-size: 16px;
+    font-size: 15px;
+    margin-left: 5px;
 }
 
 #list a .id {
@@ -120,16 +100,43 @@ img {
     margin-left: 10px;
 }
 
-.config {
+.footer {
     display: flex;
-    padding: 5px 0;
-    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .title {
+    display: flex;
+    align-items: center;
+}
+
+.footer .title img{
+    margin-left: 10px;
+}
+
+.footer .title span{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.footer .config {
+    display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 10px;
+    /* width: 20%;
+    height: 40px;
+    margin-left: auto;
+    padding: 5px 0; */
+    
     color: whitesmoke;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    transition: all ease 1s;
 }
-.config:hover {
-    background-color: rgb(212, 212, 212);
+
+.footer .config:hover {
+    background-color: rgb(230, 230, 230);
 }
 
