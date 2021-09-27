@@ -28,12 +28,12 @@
         "page": "config/config.html"
     },
     "browser_action": {
-        "default_icon": "assets/icon/swap-role.png",
+        "default_icon": "assets/swap-role.png",
         "default_title": "Swap Role - AWS",
         "default_popup": "popup/popup.html"
     },
     "icons": {
-        "256": "assets/icon/swap-role.png"
+        "256": "assets/swap-role.png"
     },
     "permissions": [
         "tabs",
