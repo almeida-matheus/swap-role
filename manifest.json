@@ -8,7 +8,7 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.console.aws.amazon.com/*",
+                "*://*.amazon.com/*",
                 "https://github.com/almeida-matheus/swap-role/*"
             ],
             "js": [

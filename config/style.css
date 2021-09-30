@@ -85,34 +85,6 @@ main .btn:hover {
     background-color: #3e8e41;
 }
 
-main .box-text {
-    position: relative;
-}
-
-main .box-text button {
-    /* color: rgb(29, 2, 56); */
-    border: none;
-    background: transparent;
-
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(0%, 0%);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    opacity: 0;
-    overflow: hidden;
-}
-
-main .box-text:hover button {
-    /* border: #3f3a30 2px solid; */
-    opacity: 1;
-    transform: translate(0, 0%);
-}
-
 footer {
     position: absolute;
     width: 100%;

@@ -49,9 +49,3 @@ function saveText() {
 }
 
 document.getElementById('save').addEventListener('click', saveText);
-
-document.getElementById('copy').addEventListener('click', function() {
-    var text = document.getElementById('config-text');
-    text.select();
-    document.execCommand('copy');
-})
