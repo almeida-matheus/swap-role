@@ -11,8 +11,8 @@ function addElement(data) {
     a.setAttribute('href', `https://signin.aws.amazon.com/switchrole?account=${id}&roleName=${role}&displayName=${account}&color=${color}&region=${region}}`);
 
     a.innerHTML = `
-        <div class="ball"></div>
-        <span class="color"></span>
+        <div class="ball" style="background-color: #${color}; border: 1px solid #999;"></div>
+        <span class="bar"></span>
         <b>${account}</b><span class="id">${id}</span>
     `;
 
@@ -28,3 +28,17 @@ function main() {
 }
 
 main()
+
+var hrefs = document.getElementsByTagName("a");
+
+function openLink() {
+    var href = this.href;
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        var tab = tabs[0];
+        chrome.tabs.update(tab.id, {url: href});
+    });
+}
+
+for (var i=0,a; a=hrefs[i]; ++i) {
+    hrefs[i].addEventListener('click', openLink);
+}
