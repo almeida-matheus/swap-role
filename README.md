@@ -21,14 +21,14 @@ Save the role swapping information on the extensions configuration page.
 
 Example:
 ```
-[Prd]
+[Display Name]
 aws_account_id=123456789012
 role_name=ROLE-NAME
 region=us-east-1
 color=86868f
 ```
 
-In AWS website, click on the extension and a popup will appear with a list of your roles.
+In AWS website or config, click on the extension and a popup will appear with a list of your roles.
 
 <img src="./assets/config-popup.png" alt="swap role config and popup">
 
