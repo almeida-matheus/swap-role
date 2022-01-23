@@ -24,7 +24,7 @@ body {
 
 .search-box {
     width: 100%;
-    
+
     position: relative;
     display: flex;
 }
@@ -48,6 +48,10 @@ body {
     margin: 0;
     background-color: #efefef;
 }
+
+#list li {
+    list-style-type: none;
+ }
 
 #list a {
     display: block;
@@ -130,7 +134,7 @@ body {
     height: 40px;
     margin-left: auto;
     padding: 5px 0; */
-    
+
     color: whitesmoke;
     /* background-color: whitesmoke; */
     transition: all ease 1s;
